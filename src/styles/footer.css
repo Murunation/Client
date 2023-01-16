@@ -25,7 +25,7 @@
 .footerLogo {
   display: flex;
   padding-top: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 .leftSideFooter {
   width: 150px;

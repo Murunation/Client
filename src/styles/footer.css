@@ -1,0 +1,37 @@
+.footer {
+  background-color: #003585;
+  box-sizing: border-box;
+  margin: 0;
+  height: 20vh;
+}
+.containerFooter {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.rightSideFooter p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.rightSideFooter {
+  width: 30%;
+}
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footerLogo {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+.leftSideFooter {
+  width: 150px;
+}
+.leftSideFooter .leftButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

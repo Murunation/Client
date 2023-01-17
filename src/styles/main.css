@@ -1,4 +1,6 @@
 .main {
   height: 77vh;
-  background-color: rgb(147, 204, 222);
+}
+.main img {
+  margin-bottom: 50px;
 }

@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+.category h1 {
+  font-weight: 600;
+  font-size: 27.38px;
+  line-height: 41px;
+  color: #003585;
+  width: 30%;
+}
+.category {
+  margin-bottom: 54px;
+}
+.categoryContainer {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+.cateButton {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.cateButton button {
+  padding: 0px;
+  gap: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.38px;
+
+  width: 139px;
+  height: 45px;
+  background-color: #fff;
+  border: 1px solid #003585;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.cateButton button:focus {
+  background: #a7f65c;
+  color: #fff;
+  transition: 0.5s;
+  border: none;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 20px;
+}

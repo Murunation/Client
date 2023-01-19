@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import { Routes, Route } from "react-router-dom";
 import Main from "./components/Main";
-
+import Login from "./components/Login";
 function App() {
   return (
     <div className="App">
@@ -10,7 +10,7 @@ function App() {
       <div className="main">
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route />
+          <Route path="login" element={<Login />} />
           <Route />
         </Routes>
       </div>

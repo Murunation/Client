@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/subcss/navbar.css";
 import { data } from "../../util/data";
-import { useNavigate } from "react";
 import Product from "../subcomp/Product";
 
 export default function Navbar() {

@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+.leftInfo {
+  width: 48%;
+  height: 780px;
+  border: 1px solid rgba(0, 0, 0, 0.283);
+  border-radius: 21px;
+}
+.leftInfo img {
+  width: 540px;
+  height: 380px;
+}
+.rightInfo {
+  width: 48%;
+  height: 780px;
+  border: 1px solid rgba(0, 0, 0, 0.281);
+  border-radius: 21px;
+}
+
+.rightInfo img {
+  width: 318px;
+  height: 290px;
+  margin: 0;
+}

@@ -4,7 +4,7 @@ import { data } from "../../util/data";
 import Product from "../subcomp/Product";
 
 export default function Navbar() {
-  const [Dat, setData] = useState(data);
+  const [Data, setData] = useState(data);
   function filterHandler(e) {
     if (e.target.innerText === "All") {
       setData(data);
@@ -30,7 +30,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="products">
-        {Dat.map((pro) => (
+        {Data.map((pro) => (
           <Product detail={pro} />
         ))}
       </div>

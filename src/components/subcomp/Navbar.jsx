@@ -15,7 +15,6 @@ export default function Navbar() {
       setData(product);
     }
   }
-  console.log("running");
   return (
     <div className="category">
       <div className="categoryContainer">

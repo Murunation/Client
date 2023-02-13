@@ -4,6 +4,8 @@ import Footer from "./Footer";
 import { Banner } from "./subcomp/Banner";
 import Info from "./subcomp/Info";
 import Navbar from "./subcomp/Navbar";
+import { special } from "../util/data";
+import LogoBanner from "./subcomp/LogoBanner";
 
 export default function Main() {
   return (
@@ -11,8 +13,9 @@ export default function Main() {
       <Banner />
       <Navbar />
       <img src="Banner.png" alt="banner" />
-      <Info />
-      <Footer />
+      <Info special = {special} />
+      <LogoBanner/>
+      <Footer/>
     </div>
   );
 }

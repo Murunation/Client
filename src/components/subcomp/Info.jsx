@@ -1,24 +1,28 @@
 import React from "react";
 import "../../styles/subcss/info.css";
+import BasketWhite from "../icons/BasketWhite";
 
-export default function Info() {
+export default function Info(prop) {
+  const { special } = prop;
   return (
     <div className="container">
       <div className="leftInfo">
+        <div className="special-product">Special product</div>
         <img
           src="https://m.media-amazon.com/images/I/81d74GHCPEL._AC_SX679_.jpg"
           alt="Speaker"
         />
-        <h3>JBL bar 2.1 deep bass</h3>
-        <h4>$11,70</h4>
+        
+        <h3>{special[0].name}</h3>
+        <h4>${special[0].price}</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus
           bibendum ullamcorper. Phasellus tristique aenean at lorem sed
-          scelerisque. Lorem ipsum dolor sit amet consectetur. Nec sit enim
-          tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at
-          lorem sed scelerisque.
+          scelerisque.
         </p>
-        <button>Add to cart</button>
+        <button>Add to cart 
+          <BasketWhite/>
+        </button>
       </div>
       <div className="rightInfo">
         <div className="topInfo">
@@ -26,9 +30,9 @@ export default function Info() {
             src="https://m.media-amazon.com/images/I/81d74GHCPEL._AC_SX679_.jpg"
             alt="headphones"
           />
-          <div>
+          <div className="topRight">
             <div className="date">22 oct 2021</div>
-            <h3>Who avoids a pain that produces?</h3>
+            <h3>{special[1].name}</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus
               faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem
@@ -37,14 +41,14 @@ export default function Info() {
             <a href="#">By spacing tech</a>
           </div>
         </div>
-        <div className="topInfo">
+        <div className="bottomInfo">
           <img
             src="https://m.media-amazon.com/images/I/81d74GHCPEL._AC_SX679_.jpg"
             alt="headphones"
           />
-          <div>
+          <div className="topRight">
             <div className="date">22 oct 2021</div>
-            <h3>Who avoids a pain that produces?</h3>
+            <h3>{special[1].name}</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus
               faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem

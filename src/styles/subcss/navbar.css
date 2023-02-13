@@ -21,9 +21,12 @@
   margin-bottom: 60px;
 }
 .cateButton {
-  width: 70%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
+}
+.cateButton .Active{
+  background-color: #003585;
 }
 .cateButton button {
   padding: 0px;
@@ -41,15 +44,11 @@
   cursor: pointer;
   transition: 0.5s;
 }
-.cateButton button:focus {
-  background: #a7f65c;
-  color: #fff;
-  transition: 0.5s;
-  border: none;
-}
+
 .products {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;

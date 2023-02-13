@@ -1,13 +1,22 @@
+*{
+  box-sizing: border-box;
+}
 .footer {
   background-color: #003585;
   box-sizing: border-box;
   margin: 0;
-  height: 20vh;
+  height: 25vh;
+  display: flex;
+  bottom: 0;
 }
 .containerFooter {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
 }
 .rightSideFooter p {
   font-weight: 500;
@@ -25,7 +34,6 @@
 .footerLogo {
   display: flex;
   padding-top: 20px;
-  padding-bottom: 80px;
 }
 .leftSideFooter {
   width: 150px;

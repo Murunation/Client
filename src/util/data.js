@@ -25,7 +25,6 @@ export const data = [
       "Used: An item that has been used previously. The item may have some signs of cosmetic wear, but is fully operational and functions as intended. This item may be a floor model or store return that has been used. See the seller’s listing for full details and description of any imperfections. ",
     price: 180,
     stock: 29,
-    sale: 0,
     category: "computers & tablets",
   },
   {
@@ -61,7 +60,6 @@ export const data = [
       "Touch Convertible Laptop AMD. 1 year Warranty. Free and fast delivery.",
     price: 220,
     stock: 12,
-    sale: 10,
     category: "computers & tablets",
   },
   {
@@ -78,8 +76,8 @@ export const data = [
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5200/5200904_sd.jpg;maxHeight=640;maxWidth=550",
     price: 599,
     stock: 13,
-    sale: 0,
     category: "computers & tablets",
+    status: "special",
   },
   {
     description: "",
@@ -90,7 +88,6 @@ export const data = [
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6412/6412355_sd.jpg;maxHeight=400;maxWidth=600",
     price: 122,
     stock: 120,
-    sale: 10,
     category: "appliances",
   },
   {
@@ -139,7 +136,6 @@ export const data = [
       "https://www.xiaomihome.global/wp-content/uploads/2022/11/xiaomi-book-air-13-2022-cover-1.webp",
     price: 1200,
     stock: 10,
-    sale: 247,
     category: "laptop",
   },
 
@@ -149,10 +145,9 @@ export const data = [
     name: "LED bulbs",
     id: "8bf7f5fc-92f3-11ed-a1eb-0242ac120002",
     image:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.templeandwebster.com.au%2FE27-A60-LED-Bulbs-112-ENLT1039.html&psig=AOvVaw07fx2Vwb6Buol-upof-vqS&ust=1674013965659000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCJjP_pHazfwCFQAAAAAdAAAAABAJ",
+      "https://i02.appmifile.com/84_operator_sg/13/09/2022/972447360327e0954a43fb47c2b84e68.png?f=webp",
     price: 80,
     stock: 4,
-    sale: 2,
     category: "appliances",
   },
 
@@ -166,7 +161,8 @@ export const data = [
     ],
     name: "Philips Oven",
     id: "8bf7f8d6-92f3-11ed-a1eb-0242ac120002",
-    image: "​​https://m.media-amazon.com/images/I/618O0ywM1SL._SX522_.jpg",
+    image:
+      "https://i02.appmifile.com/84_operator_sg/13/09/2022/972447360327e0954a43fb47c2b84e68.png?f=webp",
     price: 7920,
     stock: 164,
     sale: 27,
@@ -184,10 +180,10 @@ export const data = [
     ],
     name: "Sketch Pad",
     id: "9afc4a40-92f7-11ed-a1eb-0242ac120002",
-    image: "​​https://m.media-amazon.com/images/I/61sC5JwNrpL._AC_SX679_.jpg",
+    image:
+      "https://i02.appmifile.com/84_operator_sg/13/09/2022/972447360327e0954a43fb47c2b84e68.png?f=webp",
     price: 215.99,
     stock: 15,
-    sale: 12,
     category: "computers & tablets",
   },
   {
@@ -202,10 +198,10 @@ export const data = [
     ],
     name: "Charger",
     id: "9c7a554c",
-    image: "",
+    image:
+      "https://i02.appmifile.com/84_operator_sg/13/09/2022/972447360327e0954a43fb47c2b84e68.png?f=webp",
     price: 1342,
     stock: 122,
-    sale: 23,
     category: "Apple",
   },
   {
@@ -219,10 +215,9 @@ export const data = [
     name: "Beats Solo3 Headphones",
     id: "4ab6599a",
     image:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.apple.com%2Fshop%2Fproduct%2FMX432LL%2FA%2Fbeats-solo3-wireless-headphones-the-beats-icon-collection-matte-black&psig=AOvVaw2tl_AIH02av1Ou9DkxSqTX&ust=1673669056089000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJCPzZ7Vw_wCFQAAAAAdAAAAABAE",
+      "https://i02.appmifile.com/84_operator_sg/13/09/2022/972447360327e0954a43fb47c2b84e68.png?f=webp",
     price: 200,
     stock: 60,
-    sale: 10,
     category: "headphones",
   },
   {
@@ -240,7 +235,6 @@ export const data = [
     image: "https://m.media-amazon.com/images/I/51yJ+OqktYL.jpg",
     price: 54,
     stock: 7,
-    sale: 5,
     category: "gaming console",
   },
   {
@@ -264,7 +258,6 @@ export const data = [
     image: "https://m.media-amazon.com/images/I/61Squ7U2zRL._AC_SX679_.jpg",
     price: 169,
     stock: 9,
-    sale: 23,
     category: "telescope",
   },
   {
@@ -286,7 +279,6 @@ export const data = [
     image: "https://m.media-amazon.com/images/I/81c+9BOQNWL._AC_SX679_.jpg",
     price: 1094,
     stock: 3,
-    sale: 1,
     category: "Apple",
   },
   {
@@ -308,8 +300,8 @@ export const data = [
     image: "https://m.media-amazon.com/images/I/61b2BrYtVGL._AC_SX679_.jpg",
     price: 189,
     stock: 22,
-    sale: 0.4,
     category: "tablets",
+    status: "special",
   },
   {
     description:
@@ -330,8 +322,9 @@ export const data = [
     image: "https://m.media-amazon.com/images/I/81d74GHCPEL._AC_SX679_.jpg",
     price: 1099,
     stock: 3,
-    sale: 0.2,
+    sale: 50,
     category: "tablets",
+    status: "special",
   },
   {
     description:
@@ -354,7 +347,6 @@ export const data = [
     image: "https://m.media-amazon.com/images/I/51qmNla8aTL._AC_SX679_.jpg",
     price: 1399.99,
     stock: 5,
-    sale: 0.1,
     category: "tablets",
   },
   {
@@ -378,7 +370,37 @@ export const data = [
     image: "https://m.media-amazon.com/images/I/51D3B+8L7DL._AC_SX679_.jpg",
     price: 1399.99,
     stock: 4,
-    sale: 0.1,
     category: "tablets",
   },
+];
+
+export const special = [
+  
+  {
+    name: "JBL bar 2.1 deep bass",
+    price: 1170,
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.",
+    
+  },
+  {
+    name: "Who avoids a pain that produces?",
+    price: 1170,
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.",
+    
+  },
+  {
+    name: "Who avoids a pain that produces?",
+    price: 1170,
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.",
+    
+  },
+];
+export const UsersData = [
+  { name: "Murun", password: "Haha" },
+  { name: "Boldoo", password: "Hehe" },
+  { name: "Bataa", password: "Hoho" },
+  { name: "Chinzoo", password: "Hihi" },
 ];

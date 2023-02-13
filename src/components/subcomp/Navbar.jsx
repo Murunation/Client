@@ -9,13 +9,15 @@ export default function Navbar() {
   function filterHandler(e) {
     if (e.target.innerText === "All") {
       setData(data);
-
     } else {
       let product = data.filter((name) =>
         name.category.includes(e.target.innerText)
       );
       setData(product);
+      console.log(product);
     }
+    setActiveButton(e.target.innerText);
+    console.log(activeButton);
   }
 
   return (
@@ -23,11 +25,46 @@ export default function Navbar() {
       <div className="categoryContainer">
         <h1>Popular products</h1>
         <div className="cateButton">
-          <button onClick={filterHandler} >All</button>
-          <button onClick={filterHandler} >appliances</button>
-          <button onClick={filterHandler} >computers & tablets</button>
-          <button onClick={filterHandler}>Apple</button>
-          <button onClick={filterHandler}>tablets</button>
+          <button
+            onClick={filterHandler}
+            className={activeButton === "All" ? "active-btn " : "inactive-btn "}
+          >
+            All
+          </button>
+          <button
+            onClick={filterHandler}
+            className={
+              activeButton === "appliances" ? "active-btn" : "inactive-btn"
+            }
+          >
+            appliances
+          </button>
+          <button
+            onClick={filterHandler}
+            className={
+              activeButton === "computers & tablets"
+                ? "active-btn "
+                : "inactive-btn "
+            }
+          >
+            computers & tablets
+          </button>
+          <button
+            onClick={filterHandler}
+            className={
+              activeButton === "Apple" ? "active-btn " : "inactive-btn "
+            }
+          >
+            Apple
+          </button>
+          <button
+            onClick={filterHandler}
+            className={
+              activeButton === "tablets" ? "active-btn " : "inactive-btn "
+            }
+          >
+            tablets
+          </button>
         </div>
       </div>
       <div className="products">

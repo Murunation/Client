@@ -12,7 +12,7 @@ export default function Main() {
     <div className="main">
       <Banner />
       <Navbar />
-      <img src="Banner.png" alt="banner" />
+      <img src="Banner.png" alt="banner" className="banner-pic"/>
       <Info special = {special} />
       <LogoBanner/>
       <Footer/>

@@ -21,9 +21,8 @@
 .per-image {
   width: 48%;
 }
-.per-image img{
-    
-  height: 57vh;
+.per-image img {
+  height: 50vh;
 }
 .main-product-image {
   width: 100%;
@@ -44,8 +43,8 @@
   display: flex;
   justify-content: space-between;
 }
-.per-product{
-    margin-bottom: 50px;
+.per-product {
+  margin-bottom: 50px;
 }
 .product-info {
   width: 48%;
@@ -90,8 +89,7 @@
 .stock {
   display: flex;
   margin-top: 13px;
-  border: 1px solid #bdbdbd;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
   border: none;
   padding-bottom: 23px;
   font-weight: 400;
@@ -125,6 +123,7 @@
   margin-top: 42px;
   margin-bottom: 72px;
 }
+
 .add-cart-button button {
   display: flex;
   flex-direction: row;
@@ -143,41 +142,40 @@
   color: #ffffff;
   cursor: pointer;
 }
-.sku{
-    display: flex;
-    padding-top: 15px;
-    border-top: 2px solid #bdbdbd;
-    font-weight: 500;
-font-size: 18.1725px;
-line-height: 27px;
-margin-bottom: 40px;
-color: #232323;
+.sku {
+  display: flex;
+  padding-top: 15px;
+  border-top: 2px solid #bdbdbd;
+  font-weight: 500;
+  font-size: 18.1725px;
+  line-height: 27px;
+  margin-bottom: 40px;
+  color: #232323;
+}
+.sku b {
+  margin-right: 10px;
+}
 
-}
-.sku b{
-    margin-right: 10px;
-}
+.product-category-info {
+  display: flex;
+  font-weight: 500;
+  font-size: 18.1725px;
+  line-height: 27px;
 
-.product-category-info{
-    display: flex;
-    font-weight: 500;
-    font-size: 18.1725px;
-    line-height: 27px;
-    
-    color: #232323;
+  color: #232323;
 }
-.product-category-info b{
-    margin-right: 10px;
+.product-category-info b {
+  margin-right: 10px;
 }
-.product-social-icons{
-    display: flex;
-    margin-top: 50px;
-    color: #232323;
-    width: 45%;
-    justify-content: space-between;
+.product-social-icons {
+  display: flex;
+  margin-top: 50px;
+  color: #232323;
+  width: 45%;
+  justify-content: space-between;
 }
-.social-icons{
-    display: flex;
-    width: 60%;
-    justify-content: space-between;
+.social-icons {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
 }

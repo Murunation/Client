@@ -56,3 +56,17 @@
   align-items: center;
   justify-content: space-between;
 }
+.bag {
+  display: flex;
+  gap: 5px;
+}
+.bag span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #a7f65c;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}

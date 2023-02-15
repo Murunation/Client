@@ -1,6 +1,7 @@
 .main {
   height: 77vh;
+  margin-bottom: 50px;
 }
 .main .banner-pic {
-  margin-bottom: 50px;
+  display: flex;
 }

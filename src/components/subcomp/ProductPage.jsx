@@ -8,9 +8,19 @@ import Gmail from "../icons/Gmail";
 import Whatsapp from "../icons/Whatsapp";
 import Facebook from "../icons/Facebook";
 import Footer from "../Footer";
+import OffCanvas from "../subcomp/OffCanvas";
+import { useState } from "react";
 
 export default function ProductPage() {
   const info = useParams();
+  const [count, setcount] = useState(0);
+
+  function decrementCount() {
+    setcount((prevCount) => prevCount + 1);
+  }
+  function incrementCount() {
+    setcount((prevCount) => prevCount - 1);
+  }
   console.log(info);
   let singlecard = data.filter((product) => {
     return product.id.includes(info.id);
@@ -24,6 +34,7 @@ export default function ProductPage() {
           <Arrow />
           <p>{singlecard[0].category}</p>
           <Arrow />
+          <p>{singlecard[0].name}</p>
         </div>
         <div className="product-detail">
           <div className="per-image">
@@ -42,41 +53,50 @@ export default function ProductPage() {
               <h2>{singlecard[0].name}</h2>
               <h3>${singlecard[0].price}</h3>
             </div>
-            
+
             <div className="product-stock-status">
               <p className="able">Availability:</p>
-              <p className="stock-text"><Stock/> In stock</p>
+              <p className="stock-text">
+                <Stock /> In stock
+              </p>
             </div>
-            <p className="stock">Hurry up! only {singlecard[0].stock} product left in stock</p>
+            <p className="stock">
+              Hurry up! only {singlecard[0].stock} product left in stock
+            </p>
             <div className="quantity">
               <p>Quantity :</p>
               <div className="add-button">
-                <button>-</button>
+                <button onClick={incrementCount}>-</button>
                 {/* {x} */}
-                <span>0</span>
-                <button>+</button>
+                <span>{count}</span>
+                <button onClick={decrementCount}>+</button>
               </div>
             </div>
             <div className="add-cart-button">
               <button>Add to cart</button>
               <button>Buy it now</button>
             </div>
-            <p className="sku"> <b>Sku:</b> 01133-9-9</p>
-            <p className="product-category-info"> <b>Category:</b>  {singlecard[0].sale}% off, {singlecard[0].name}</p>
+            <p className="sku">
+              {" "}
+              <b>Sku:</b> 01133-9-9
+            </p>
+            <p className="product-category-info">
+              {" "}
+              <b>Category:</b> {singlecard[0].sale}% off, {singlecard[0].name}
+            </p>
             <div className="product-social-icons">
               <b>Share: </b>
               <div className="social-icons">
                 <Gmail />
-              <Facebook />
-              <Whatsapp />
+                <Facebook />
+                <Whatsapp />
               </div>
-              
             </div>
           </div>
         </div>
-        <img src="" alt="" />
       </div>
-      <Footer/>
+      <OffCanvas />
+      <Footer />
     </div>
   );
 }

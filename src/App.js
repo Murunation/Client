@@ -42,9 +42,10 @@ function App() {
       <div className="main">
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="login" element={<Login />}  />
+          <Route path="login" element={<Login />} />
 
           <Route path="product/:id" element={<ProductPage />} />
+          <Route path="product/login" element={<Login />} />
         </Routes>
       </div>
     </div>

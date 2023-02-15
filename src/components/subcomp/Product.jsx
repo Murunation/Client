@@ -23,11 +23,10 @@ export default function Product(prop) {
           </div>
           <div>
             <button>
-              <Basket/>
+              <Basket />
             </button>
           </div>
         </div>
-        
       </div>
     </div>
   );

@@ -1,9 +1,8 @@
-import React from "react";
 import Logo from "../components/icons/Logo";
 import "../styles/header.css";
-import Sign from "./icons/Sign";
 import Bag from "./icons/Bag";
-
+import Sign from "./icons/Sign";
+import React, { useState } from "react";
 export default function Header() {
   return (
     <div className="header">
@@ -24,6 +23,7 @@ export default function Header() {
           </div>
           <div className="bag">
             <Bag />
+            <span>0</span>
           </div>
         </div>
       </div>

@@ -52,7 +52,7 @@
 }
 .rightSide {
   display: flex;
-  width: 12%;
+  width: 14%;
   align-items: center;
   justify-content: space-between;
 }
@@ -69,4 +69,21 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
+}
+.profile {
+  display: flex;
+  gap: 10px;
+}
+.sign{
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+.signIn {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  align-items: center;
+  display: flex;
 }

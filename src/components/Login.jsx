@@ -11,10 +11,9 @@ export default function Login(prop) {
   const {setCloseModal, setLogin} = useContext(MainContext);
   
   const [userData, setUserData] = useState();
-  const [openRegister, setOpenRegister] = useState(false);
+  const [openRegister, setOpenRegister] = useState(true);
   const [oldRegitser, setOldRegitser] = useState(false);
   const [newRegister, setNewRegister] = useState(false);
-  const navigate = useNavigate();
 //false and close
   useEffect(() => {
     axios.get("http://localhost:4000/users").then((res) => {
@@ -29,7 +28,7 @@ export default function Login(prop) {
 
     userData &&
       userData.map((user) => {
-        if (user.email === username || user.phone_number === username) {
+        if (user.name === username || user.phone_number === username) {
           if (user.password === password) {
             localStorage.setItem("login", true);
             setLogin(JSON.parse(localStorage.getItem("login")));
@@ -44,9 +43,6 @@ export default function Login(prop) {
 
   function registerHandler(e) {
     e.preventDefault();
-    
-
-
     let password = e.target.password.value;
     let passwordAgain = e.target.passwordAgain.value;
     let email = e.target.email.value;
@@ -79,7 +75,7 @@ export default function Login(prop) {
     if (oldRegitser) {
       setNewRegister(true);
     } else {
-      alert("burtgeltei bna");
+      alert("You already have account");
     }
 
     if (newRegister) {
@@ -91,10 +87,10 @@ export default function Login(prop) {
           setCloseModal(false);
           setOpenRegister(true);
         } else {
-          alert("Нууц үг 8 аас дээш үсэгтэй байх");
+          alert("The password have to more than 8 characters");
         }
       } else {
-        alert("Нууц үгүүд адил байх шаардалгатай ");
+        alert("Passwords must have the same ");
       }
     }
   }
@@ -103,7 +99,7 @@ export default function Login(prop) {
       <div className="modalcontent">
         <div className="modalHeater">
           <Logo/>
-          <h2>Login page</h2>
+          <h2>Login</h2>
           <button
             onClick={() => {
               setCloseModal(false);
@@ -133,21 +129,21 @@ export default function Login(prop) {
               <input
                 name="name"
                 type="text"
-                placeholder="И-мэйл эсвэл Утасны дугаар"
+                placeholder="User Name or Phone number"
                 className="formInput"
               />
               <input
                 type="password"
-                placeholder="Нууц үг"
+                placeholder="Password"
                 className="formInput"
                 name="password"
               />
-              <a href="#">Нууц үгээ мартсан уу?</a>{" "}
+              <a href="#">Forgot the password?</a>{" "}
               <button className="formButton" id="Signin" type="submit">
-                Нэвтрэх
+                Log in
               </button>
               <div className="or">
-                <span className="lineText">эсвэл</span>
+                <span className="lineText">Or</span>
                 <p className="line"></p>
               </div>
             </>
@@ -157,47 +153,47 @@ export default function Login(prop) {
               <input
                 name="email"
                 type="text"
-                placeholder="И-мэйл"
+                placeholder="Email"
                 className="formInput"
                 required
               />
               <input
                 name="lastName"
                 type="text"
-                placeholder="Овог"
+                placeholder="Last name"
                 className="formInput"
                 required
               />
               <input
                 name="firstName"
                 type="text"
-                placeholder="Нэр"
+                placeholder="First Name"
                 className="formInput"
                 required
               />
               <input
                 name="phoneNumber"
                 type="number"
-                placeholder="Утасны дугаар"
+                placeholder="Phone number"
                 className="formInput"
                 required
               />
               <input
                 type="password"
-                placeholder="Нууц үг"
+                placeholder="Password"
                 className="formInput"
                 name="password"
                 required
               />
               <input
                 type="password"
-                placeholder="Нууц үгээ давтах"
+                placeholder="Password"
                 className="formInput"
                 name="passwordAgain"
                 required
               />
               <button id="register" type="submit" className="formButton">
-                Бүртгүүлэх
+                Sign up
               </button>
             </>
           )}
@@ -207,7 +203,7 @@ export default function Login(prop) {
               className="formButton"
               id="register"
               type="button"
-              value="Бүртгүүлэх"
+              value="Sign up"
               onClick={() => {
                 setOpenRegister(false);
               }}

@@ -5,12 +5,11 @@ import Main from "./components/Main";
 import Login from "./components/Login";
 import ProductPage from "./components/subcomp/ProductPage";
 import { useEffect, useState, createContext } from "react";
-import { UsersData } from "./util/data";
 import axios from "axios";
 export const MainContext = createContext();
 function App() {
   const [product, setProduct] = useState("");
-  const [closeModal, setCloseModal] = useState(true);
+  const [closeModal, setCloseModal] = useState();
   const [login, setLogin] = useState(JSON.parse(localStorage.getItem("login")));
   const [data, setdata] = useState();
   const [userData, setUserData] = useState();

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/footer.css";
 import Facebook from "./icons/Facebook";
 import Gmail from "./icons/Gmail";

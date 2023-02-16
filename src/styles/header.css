@@ -87,3 +87,12 @@
   align-items: center;
   display: flex;
 }
+.bag-button{
+  background-color: #003585;
+  border: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+.bag-button:hover{
+  background-color: #003585;
+}

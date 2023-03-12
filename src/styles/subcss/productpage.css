@@ -179,3 +179,8 @@
   width: 60%;
   justify-content: space-between;
 }
+.add-button input{
+  width: 30px;
+  border: none;
+  text-align: center;
+}

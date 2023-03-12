@@ -16,10 +16,16 @@ export default function ProductPage() {
   const [count, setcount] = useState(0);
 
   function decrementCount() {
-    setcount((prevCount) => prevCount + 1);
+    if (singlecard[0].stock > count) {
+      setcount(count +1);
+    }
+    // setcount((prevCount) => prevCount + 1);
   }
   function incrementCount() {
-    setcount((prevCount) => prevCount - 1);
+    if (1< count ){
+      setcount(count - 1);
+    }
+    // setcount((prevCount) => prevCount - 1);
   }
   console.log(info);
   let singlecard = data.filter((product) => {
@@ -67,8 +73,7 @@ export default function ProductPage() {
               <p>Quantity :</p>
               <div className="add-button">
                 <button onClick={incrementCount}>-</button>
-                {/* {x} */}
-                <span>{count}</span>
+                <input type="number" value={count} readOnly/>
                 <button onClick={decrementCount}>+</button>
               </div>
             </div>
